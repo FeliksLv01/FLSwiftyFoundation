@@ -1,42 +1,14 @@
-#
-# Be sure to run `pod lib lint FLSwiftyFoundation.podspec' to ensure this is a
-# valid spec before submitting.
-#
-# Any lines starting with a # are optional, but their use is encouraged
-# To learn more about a Podspec see https://guides.cocoapods.org/syntax/podspec.html
-#
-
 Pod::Spec.new do |s|
   s.name             = 'FLSwiftyFoundation'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of FLSwiftyFoundation.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
-
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
-
-  s.homepage         = 'https://github.com/felikslv/FLSwiftyFoundation'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  s.version          = '0.0.1'
+  s.summary          = 'FLSwiftyFoundation.'
+  s.homepage         = 'https://github.com/felikslv01/FLSwiftyFoundation'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'felikslv' => 'felikslv@163.com' }
-  s.source           = { :git => 'https://github.com/felikslv/FLSwiftyFoundation.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-
-  s.ios.deployment_target = '10.0'
-
-  s.source_files = 'FLSwiftyFoundation/Classes/**/*'
+  s.source           = { :git => 'https://github.com/felikslv01/FLSwiftyFoundation.git', :tag => s.version.to_s }
+  s.ios.deployment_target = '11.0'
+  s.swift_version = '5.0'
   
-  # s.resource_bundles = {
-  #   'FLSwiftyFoundation' => ['FLSwiftyFoundation/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.source_files = 'FLSwiftyFoundation/Classes/**/*'
+  s.dependency 'RxSwift', '5.1.1'
 end
