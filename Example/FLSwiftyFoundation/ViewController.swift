@@ -15,6 +15,9 @@ struct Model: Codable {
     var int: Int
     @Default<String>
     var str: String
+    
+    @Default<[String]>
+    var arrays: [String]
 }
 
 class ViewController: UIViewController {
@@ -25,7 +28,7 @@ class ViewController: UIViewController {
         let jsonStr = "{\"int1\":123,\"str\": null}"
         let data = jsonStr.data(using: .utf8) ?? Data()
         let model = try? JSONDecoder().decode(Model.self, from: data)
-        print(model!.int)
+        print(model!.arrays)
     }
 
     override func didReceiveMemoryWarning() {

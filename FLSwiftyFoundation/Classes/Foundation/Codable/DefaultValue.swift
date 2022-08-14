@@ -6,25 +6,25 @@
 //
 
 import Foundation
+import UIKit
 
 
 public protocol DefaultValue {
-    associatedtype Value: Codable
-    
-    static var defaultValue: Value { get }
+    associatedtype CodableValue: Codable
+    static func defaultValue() -> CodableValue
 }
 
 @propertyWrapper
 public struct Default<T: DefaultValue>: Codable {
-    public var wrappedValue: T.Value
+    public var wrappedValue: T.CodableValue
     
-    public init(wrappedValue: T.Value) {
+    public init(wrappedValue: T.CodableValue) {
         self.wrappedValue = wrappedValue
     }
     
     public init(from decoder: Decoder) throws {
         let container = try decoder.singleValueContainer()
-        wrappedValue = (try? container.decode(T.Value.self)) ?? T.defaultValue
+        wrappedValue = (try? container.decode(T.CodableValue.self)) ?? T.defaultValue()
     }
 }
 
@@ -33,19 +33,27 @@ public extension KeyedDecodingContainer {
         _ type: Default<T>.Type,
         forKey key: Key
     ) throws -> Default<T> where T: DefaultValue {
-        try decodeIfPresent(type, forKey: key) ?? Default(wrappedValue: T.defaultValue)
+        try decodeIfPresent(type, forKey: key) ?? Default(wrappedValue: T.defaultValue())
     }
 }
 
 
 extension Bool: DefaultValue {
-    public static var defaultValue = false
+    public static func defaultValue() -> Bool { false }
 }
 
 extension Int: DefaultValue {
-    public static var defaultValue = 0
+    public static func defaultValue() -> Int { 0 }
 }
 
 extension String: DefaultValue {
-    public static var defaultValue = ""
+    public static func defaultValue() -> String { "" }
+}
+
+extension Array: DefaultValue where Element: Codable {
+    public static func defaultValue() -> Array<Element> { [] }
+}
+
+extension Dictionary: DefaultValue where Key: Codable, Value: Codable {
+    public static func defaultValue() -> Dictionary<Key, Value> { [:] }
 }
