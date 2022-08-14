@@ -1,5 +1,5 @@
 PODS:
-  - FLSwiftyFoundation (0.1.0):
+  - FLSwiftyFoundation (0.0.1):
     - RxSwift (= 5.1.1)
   - RxSwift (5.1.1)
 
@@ -15,7 +15,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  FLSwiftyFoundation: 4104004c01ba2814fae280c2984d5cc6afc7abc3
+  FLSwiftyFoundation: 9566858b6e4c67b49f0978ba473fafe01b7341a2
   RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
 
 PODFILE CHECKSUM: cd6f383b416ea0d0bfb9481ada9b569d987ed9fa
