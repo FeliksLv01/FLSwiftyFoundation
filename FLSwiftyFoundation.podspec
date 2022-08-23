@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'FLSwiftyFoundation'
-  s.version          = '0.0.4'
+  s.version          = '0.0.5'
   s.summary          = 'FLSwiftyFoundation.'
   s.homepage         = 'https://github.com/felikslv01/FLSwiftyFoundation'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
@@ -10,5 +10,5 @@ Pod::Spec.new do |s|
   s.swift_version = '5.0'
   
   s.source_files = 'FLSwiftyFoundation/Classes/**/*'
-  s.dependency 'RxSwift', '5.1.1'
+  s.dependency 'RxSwift', '6.5.0'
 end
