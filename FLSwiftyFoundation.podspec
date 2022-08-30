@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'FLSwiftyFoundation'
-  s.version          = '0.0.5'
+  s.version          = '0.0.6'
   s.summary          = 'FLSwiftyFoundation.'
   s.homepage         = 'https://github.com/felikslv01/FLSwiftyFoundation'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
