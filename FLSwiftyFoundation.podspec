@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/felikslv01/FLSwiftyFoundation.git', :tag => s.version.to_s }
   s.ios.deployment_target = '11.0'
   s.swift_version = '5.0'
-  
+  s.frameworks = 'UIKit'
   s.source_files = 'FLSwiftyFoundation/Classes/**/*'
   s.dependency 'RxSwift', '6.5.0'
 end
