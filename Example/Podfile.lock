@@ -1,0 +1,23 @@
+PODS:
+  - FLSwiftyFoundation (0.0.6):
+    - RxSwift (= 6.5.0)
+  - RxSwift (6.5.0)
+
+DEPENDENCIES:
+  - FLSwiftyFoundation (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - RxSwift
+
+EXTERNAL SOURCES:
+  FLSwiftyFoundation:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  FLSwiftyFoundation: bb49562fed3fea5ce0fea0eb7fd39bbadebe09dd
+  RxSwift: 5710a9e6b17f3c3d6e40d6e559b9fa1e813b2ef8
+
+PODFILE CHECKSUM: cd6f383b416ea0d0bfb9481ada9b569d987ed9fa
+
+COCOAPODS: 1.11.3
