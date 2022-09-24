@@ -8,7 +8,11 @@
 import UIKit
 import Kingfisher
 
-public extension FLExtension where Base: UIImageView {
+public extension UIImageView {
+    
+}
+
+public extension FLExtension where Base == UIImageView {
     func setImageURL(_ url: String) {
         value.kf.setImage(with: URL(string: url))
     }
