@@ -11,4 +11,5 @@ Pod::Spec.new do |s|
   s.frameworks = 'UIKit'
   s.source_files = 'FLSwiftyFoundation/Classes/**/*'
   s.dependency 'RxSwift', '6.5.0'
+  s.dependency 'Kingfisher', '~> 6.3.1'
 end

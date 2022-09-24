@@ -36,7 +36,7 @@ public extension UIColor {
     
 }
 
-public extension FLExtension where Base == UIColor {
+public extension FLExtension where Base: UIColor {
     static var random: UIColor {
         let red = Int.random(in: 0...255)
         let green = Int.random(in: 0...255)

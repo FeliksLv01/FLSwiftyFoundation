@@ -1,6 +1,8 @@
 PODS:
   - FLSwiftyFoundation (0.0.6):
+    - Kingfisher (~> 6.3.1)
     - RxSwift (= 6.5.0)
+  - Kingfisher (6.3.1)
   - RxSwift (6.5.0)
 
 DEPENDENCIES:
@@ -8,6 +10,7 @@ DEPENDENCIES:
 
 SPEC REPOS:
   trunk:
+    - Kingfisher
     - RxSwift
 
 EXTERNAL SOURCES:
@@ -15,7 +18,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  FLSwiftyFoundation: bb49562fed3fea5ce0fea0eb7fd39bbadebe09dd
+  FLSwiftyFoundation: 08a8a4775f2a3ff1148f91c6e1a571e8fa981608
+  Kingfisher: 016c8b653a35add51dd34a3aba36b580041acc74
   RxSwift: 5710a9e6b17f3c3d6e40d6e559b9fa1e813b2ef8
 
 PODFILE CHECKSUM: cd6f383b416ea0d0bfb9481ada9b569d987ed9fa

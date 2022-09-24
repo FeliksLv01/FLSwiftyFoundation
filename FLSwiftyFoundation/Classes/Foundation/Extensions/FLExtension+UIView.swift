@@ -11,7 +11,7 @@ public extension UIView {
     var ex: FLExtension<UIView> { FLExtension(self) }
 }
 
-public extension FLExtension where Base == UIView {
+public extension FLExtension where Base: UIView {
     var parentViewController: UIViewController? {
         var parentResponder: UIResponder? = value
         while parentResponder != nil {
