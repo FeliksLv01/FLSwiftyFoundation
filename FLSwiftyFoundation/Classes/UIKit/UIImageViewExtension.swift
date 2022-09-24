@@ -1,5 +1,5 @@
 //
-//  UIImageExtension.swift
+//  UIImageViewExtension.swift
 //  FLSwiftyFoundation
 //
 //  Created by Feliks Lv on 2022/9/24.
@@ -9,7 +9,7 @@ import UIKit
 import Kingfisher
 
 public extension UIImageView {
-    
+    var ex: FLExtension<UIImageView> { FLExtension(self) }
 }
 
 public extension FLExtension where Base == UIImageView {
